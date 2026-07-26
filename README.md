@@ -22,13 +22,25 @@ A comprehensive, step-by-step guide designed for beginners to safely download, i
 
 > 🌐 **Official Genuine ISO Downloads:** You can safely download untouched official Windows ISOs directly from [MassGrave's Official Download Page](https://massgrave.dev/genuine-installation-media).
 
+### 🚨 CRITICAL: Standard Enterprise LTSC vs. IoT LTSC
+
+When choosing your download file on MassGrave, you will notice two different LTSC editions:
+
+1. **Windows 10 Enterprise LTSC (RECOMMENDED) ⭐**
+   - **Why use it:** Maximum hardware compatibility, stable driver support, and rock-solid daily performance for desktop PCs and laptops.
+
+2. **Windows 10 IoT Enterprise LTSC (NOT RECOMMENDED) ❌**
+   - **Why avoid it:** The IoT (Internet of Things) edition is strictly designed for embedded systems (ATMs, kiosks, specialized machinery). On standard desktop/laptop hardware, IoT LTSC frequently causes severe **driver conflicts and sudden BSOD (Blue Screen of Death) crashes** after 1 hour, 1 day, or 1 week of use.
+
+---
+
 ### Recommended Editions
-* **Windows 10 Enterprise LTSC 2021 (Version 21H2):** Best for overall stability, gaming, and maximum modern hardware/driver compatibility.
-* **Windows 10 Enterprise LTSC 2019 (Version 1809):** Best for ultra-low-end hardware or older PCs with limited RAM.
+* **Windows 10 Enterprise LTSC 2021 (Version 21H2) [Standard Non-IoT]:** Best for overall stability, gaming, and maximum modern hardware/driver compatibility.
+* **Windows 10 Enterprise LTSC 2019 (Version 1809) [Standard Non-IoT]:** Best for ultra-low-end hardware or older PCs with limited RAM.
 
 ### Step-by-Step ISO Download & Verification
 1. Go to [massgrave.dev/genuine-installation-media](https://massgrave.dev/genuine-installation-media).
-2. Select **Windows 10 / 11 Enterprise LTSC** and download the official **x64 ISO image** for your preferred LTSC edition.
+2. Select **Windows 10 / 11 Enterprise LTSC** and choose **Windows 10 Enterprise LTSC (Standard, Non-IoT) x64 ISO**.
 3. *(Optional but Recommended)* Verify the SHA256 checksum after downloading to ensure the ISO is untampered.
 4. Download **Rufus** (Official Utility) to create a bootable USB drive:
    - Target System: `UEFI (non CSM)` or `BIOS`
