@@ -1,78 +1,79 @@
-# Windows 10 LTSC: Complete Beginner’s Download & Setup Guide
+# Windows 10 LTSC: Beginner’s Download & Setup Guide
 
-A simple, straightforward guide to help you choose the right version of **Windows 10 LTSC**, download genuine installation files, and set it up on your PC without driver issues or system crashes.
+A straightforward guide to picking the right version of **Windows 10 LTSC**, downloading genuine files, and setting up a clean, stable system without driver crashes.
 
 ---
 
-## Which Version Is Right for You?
+## 📌 Which Version Should You Choose?
 
-When downloading Windows 10 LTSC, you will see two main editions listed. Choosing the right one before you install is very important for system stability.
+When downloading Windows 10 LTSC, you will see two main options. Picking the right one before installing is important for a smooth experience.
 
-| Edition | Who It’s For | Support Lifecycle | Recommended? |
+| Edition | Best For | Support Duration | Recommended? |
 | :--- | :--- | :--- | :--- |
-| **Windows 10 Enterprise LTSC** | Standard Desktop PCs, Laptops & Gaming | 5 Years | **YES (Best Choice)** |
-| **Windows 10 IoT Enterprise LTSC** | ATM Machines, Kiosks & Factory Hardware | 10 Years | **NO (Avoid Clean ISO Install)** |
+| **Windows 10 Enterprise LTSC** | Everyday PCs, Laptops & Gaming | 5 Years | **YES** *(Best choice for most users)* |
+| **Windows 10 IoT Enterprise LTSC** | Kiosks, ATMs & Industrial Hardware | 10 Years | **NO** *(Do not clean install from ISO)* |
 
 ---
 
-### ⚠️ Important Notice for PC & Laptop Users
+### ⚠️ Important Warning for Desktop & Laptop Users
 
-> **Do NOT perform a clean installation using the IoT Enterprise LTSC ISO.**
+> **Do not clean install directly from the IoT Enterprise LTSC ISO.**
 
-* **Why?** The raw IoT ISO is intended for specialized embedded hardware (like digital kiosks and ATMs). Installing it directly on normal desktop PCs or laptops frequently leads to missing driver conflicts and random **Blue Screen of Death (BSOD)** crashes within a few hours or days.
-* **The Easy Solution:** Always download and install the standard **Windows 10 Enterprise LTSC ISO** first. 
-* **Want 10 Years of Support?** If you want the longer 10-year support lifecycle that IoT offers, simply install standard Enterprise LTSC. Once you reach your desktop, you can convert your system to IoT Enterprise in seconds using the activation script safely—without any driver issues!
+* **The Problem:** The standalone IoT ISO is tailored for specialized embedded hardware. Installing it on regular PC hardware often leads to missing driver conflicts and unexpected **Blue Screen of Death (BSOD)** crashes within a few hours or days.
+* **The Safe Way:** Always install the standard **Windows 10 Enterprise LTSC ISO** first.
+* **Want 10 Years of Support?** Install standard Enterprise LTSC first. Once you reach the desktop, you can safely convert your edition to IoT Enterprise in seconds using the activation script—giving you the full 10-year support lifecycle without any driver instability.
 
 ---
 
-## 1. How to Download the ISO
+## 1. Downloading the ISO File
 
-Official, untouched Microsoft Windows installation files can be found directly on MassGrave’s open-source repository:
+You can get untouched, official Microsoft images directly from MassGrave:
 
-* **GitHub Source Page:** [massgrave.dev/docs/windows_ltsc_links.md](https://github.com/massgravel/massgrave.dev/blob/main/docs/windows_ltsc_links.md)
-* **Web Mirror:** [massgrave.dev/docs/windows_ltsc_links.md](https://massgrave.dev/docs/windows_ltsc_links.md)
+* **GitHub Links Page:** [massgrave.dev/docs/windows_ltsc_links.md](https://github.com/massgravel/massgrave.dev/blob/main/docs/windows_ltsc_links.md)
+* **Official Website:** [massgrave.dev](https://massgrave.dev)
 
+**Steps:**
 1. Open either link above.
-2. Look for **Windows 10 Enterprise LTSC 2021 (x64)** *(Standard, Non-IoT)* and download the ISO file.
+2. Find and download **Windows 10 Enterprise LTSC 2021 (x64)** *(Standard, Non-IoT)*.
 
 ---
 
-## 2. How to Create a Bootable USB Drive
+## 2. Creating a Bootable USB Drive
 
-1. Insert a USB flash drive (8GB or larger) into your PC. *(Note: This will erase everything on the USB drive, so backup any important files on it first).*
-2. Download and open **Rufus** (a free bootable USB creation tool).
-3. Select your USB drive at the top under **Device**.
+1. Plug an 8GB (or larger) USB flash drive into your computer. *(Make sure to back up any important files on it first, as this process erases the drive).*
+2. Download and run **Rufus** (a free USB creation tool).
+3. Select your flash drive at the top under **Device**.
 4. Click **Select** and choose the Windows 10 LTSC ISO file you just downloaded.
-5. Set the **Partition scheme**:
-   * Choose **GPT** if your PC is relatively modern (UEFI).
-   * Choose **MBR** if you are installing on an older legacy PC.
-6. Click **Start** and wait for the flashing process to complete.
+5. Choose your **Partition scheme**:
+   * Select **GPT** if your PC is modern (UEFI).
+   * Select **MBR** if you are installing on an older computer.
+6. Click **Start** and wait for it to finish.
 
 ---
 
-## 3. Recommended Post-Install Fixes
+## 3. Post-Installation Checklist (Prevent Crashes)
 
-After installing Windows and reaching your new desktop, complete these basic setup steps to prevent system crashes (`DRIVER_POWER_STATE_FAILURE` or `WHEA_UNCORRECTABLE_ERROR`):
+Once Windows is installed and you reach your desktop, complete these basic fixes to prevent potential system freezes or driver errors:
 
-### A. Turn Off Fast Startup
-Fast Startup can cause hardware drivers to load improperly on cold boots:
+### Disable Fast Startup
+Fast Startup forces Windows into a hybrid sleep mode that can mess up driver loading when turning your PC on:
 1. Open **Control Panel** $\rightarrow$ **Power Options**.
 2. Click **Choose what the power buttons do** on the left menu.
 3. Click **Change settings that are currently unavailable**.
 4. Uncheck **Turn on fast startup (recommended)** and click **Save changes**.
 
-### B. Install Your Official Hardware Drivers
-* Avoid relying solely on generic display or motherboard drivers provided by Windows Update.
-* Manually download and install the latest official drivers directly from your graphics vendor (**AMD**, **Nvidia**, or **Intel**) and your motherboard manufacturer.
+### Install Graphics & Motherboard Drivers
+* Avoid relying on basic drivers installed automatically by Windows Update.
+* Download and install the latest official drivers directly from your graphics maker (**Nvidia**, **AMD**, or **Intel**) and your motherboard manufacturer's support page.
 
 ---
 
-## 4. Activation & Safe IoT Conversion
+## 4. Activation & Converting to IoT
 
-To activate your system or upgrade your standard LTSC installation to the 10-year IoT support build safely:
+To activate your system cleanly—or to convert your installation to the 10-year IoT support edition safely—use MassGrave (MAS):
 
-1. Right-click the **Start Menu** icon and select **PowerShell (Admin)** or **Terminal (Admin)**.
-2. Paste the following command and press **Enter**:
+1. Right-click the **Start Menu** icon and choose **PowerShell (Admin)** or **Terminal (Admin)**.
+2. Paste this command and hit **Enter**:
 
 ```powershell
 irm [https://get.activated.win](https://get.activated.win) | iex
