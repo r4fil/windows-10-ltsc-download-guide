@@ -1,4 +1,4 @@
-# 🪟 Windows 10 LTSC Download & Setup Guide
+# 🌐 Windows 10 LTSC Download & Setup Guide
 
 A complete step-by-step guide on how to safely download, install, and activate Windows 10 LTSC, featuring essential troubleshooting tips to prevent random blue screen (BSOD) crashes.
 
@@ -18,20 +18,27 @@ A complete step-by-step guide on how to safely download, install, and activate W
 
 ---
 
-### 📥 1. Downloading the ISO
+### 📥 1. Downloading the Windows 10 LTSC ISO
+
 <details>
-<summary><b>▶ Click here for info</b></summary>
+<summary><b>▶ Click here for ISO download options</b></summary>
 
 <br>
 
-1. Get the official scripts and ISO links from the **[MassGrave GitHub Repository](https://github.com/massgravel/Microsoft-Activation-Scripts)** or their documentation site at **[massgrave.dev](https://massgrave.dev)**.
-2. Select **Windows 10 Enterprise LTSC 2021** (x64).
-3. Download the ISO in your preferred language.
+To ensure you get a clean, untouched, and safe copy of Windows 10 Enterprise LTSC, use the official direct links maintained by the **MassGrave (MAS)** community:
+
+1. **Visit the Official GitHub / Documentation Page:**
+   * Go directly to **[massgrave.dev](https://massgrave.dev)** or their official GitHub repository **[massgravel/Microsoft-Activation-Scripts](https://github.com/massgravel/Microsoft-Activation-Scripts)**.
+2. **Navigate to Downloads:**
+   * Click on **Download Windows** in the menu $\rightarrow$ Select **Windows 10 / 11 LTSC**.
+3. **Select the Correct Version:**
+   * Choose **Windows 10 Enterprise LTSC 2021 (x64)**.
+4. **Download the File:**
+   * Pick your preferred system language and click the direct link to download the clean `.iso` image.
 
 </details>
 
 ---
-
 
 ### ⚠️ 2. Crucial Step During Setup (Avoiding Random BSODs)
 <details>
