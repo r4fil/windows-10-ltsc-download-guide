@@ -20,16 +20,17 @@ A comprehensive, step-by-step guide designed for beginners to safely download, i
 
 ## 📥 1. Downloading the ISO
 
-> ⚠️ **Important:** Always use official or verified ISO sources to prevent downloading tampered or malware-loaded operating system files.
+> 🌐 **Official Genuine ISO Downloads:** You can safely download untouched official Windows ISOs directly from [MassGrave's Official Download Page](https://massgrave.dev/genuine-installation-media).
 
 ### Recommended Editions
 * **Windows 10 Enterprise LTSC 2021 (Version 21H2):** Best for overall stability, gaming, and maximum modern hardware/driver compatibility.
 * **Windows 10 Enterprise LTSC 2019 (Version 1809):** Best for ultra-low-end hardware or older PCs with limited RAM.
 
 ### Step-by-Step ISO Download & Verification
-1. Download the official **x64 ISO image** for your preferred LTSC edition.
-2. *(Optional but Recommended)* Verify the SHA256 checksum after downloading to ensure the ISO is untampered.
-3. Download **Rufus** (Official Utility) to create a bootable USB drive:
+1. Go to [massgrave.dev/genuine-installation-media](https://massgrave.dev/genuine-installation-media).
+2. Select **Windows 10 / 11 Enterprise LTSC** and download the official **x64 ISO image** for your preferred LTSC edition.
+3. *(Optional but Recommended)* Verify the SHA256 checksum after downloading to ensure the ISO is untampered.
+4. Download **Rufus** (Official Utility) to create a bootable USB drive:
    - Target System: `UEFI (non CSM)` or `BIOS`
    - Partition Scheme: `GPT` (for modern systems) or `MBR` (for older legacy systems)
 
@@ -47,7 +48,7 @@ Fast startup puts the system into a hybrid sleep state that can corrupt driver s
 4. Uncheck **Turn on fast startup (recommended)** and click **Save changes**.
 
 ### B. Install Official GPU & Motherboard Drivers
-- **Do not relies on Windows Update default display drivers.**
+- **Do not rely on Windows Update default display drivers.**
 - Download and manually install the latest WHQL drivers directly from your graphics vendor (**AMD**, **Nvidia**, or **Intel**).
 - Install your official chipset and audio drivers provided by your motherboard/system manufacturer.
 
