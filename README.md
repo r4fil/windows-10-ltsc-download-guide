@@ -11,25 +11,35 @@ Windows 10 Long-Term Servicing Channel (LTSC) is a streamlined release of Window
 ### Core Advantages
 * **Zero Bloatware:** Excludes pre-installed Microsoft Store apps, Cortana, and background tracking services.
 * **Predictable Updates:** Receives critical security patches without intrusive, feature-breaking major updates.
-* **Low Overhead:** Noticeably lower CPU and RAM usage, making it ideal for older hardware, low-end PCs, and high-performance gaming configurations.
+* **Low Overhead:** Noticeably lower CPU and RAM usage, making it ideal for older hardware, low-end PCs, and gaming configurations.
 
 ---
 
 ## 1. ISO Selection & Download
 
-Official, untouched Windows installation images can be obtained directly via [MassGrave's Media Repository](https://massgrave.dev/genuine-installation-media).
+Official, untouched Windows installation images can be obtained directly via MassGrave's official documentation:
+👉 **[MassGrave Windows LTSC Download Page](https://massgrave.dev/docs/windows_ltsc_links.md)**
+
+> ⚠️ **CRITICAL WARNING FOR DESKTOP & LAPTOP USERS:**
+> Do **NOT** clean install the **Windows 10 IoT Enterprise LTSC ISO** image on standard desktop PCs or laptops.
+> 
+> * **The Issue:** The raw IoT edition ISO is built specifically for embedded systems (ATMs, kiosks, factory hardware). Installing it directly on regular PCs frequently leads to driver initialization failures and random **Blue Screen of Death (BSOD)** crashes within 1 hour, 1 day, or 1 week of usage.
+> * **The Solution:** Always download and install the **Standard Windows 10 Enterprise LTSC ISO**. 
+> * **Safe IoT Conversion:** If you want the extended 10-year support lifecycle of IoT, simply install standard Enterprise LTSC first. Once installed, you can safely convert your system to **IoT Enterprise LTSC** in seconds using the MassGrave activation script (MAS)—100% safe, stable, and driver-issue free!
+
+---
 
 ### Edition Comparison
 
 | Edition | Primary Use Case | Stability & Support |
 | :--- | :--- | :--- |
 | **Windows 10 Enterprise LTSC** *(Recommended)* | Desktop PCs, Laptops, Gaming | Full hardware compatibility, stable driver support, standard 5-year lifecycle. |
-| **Windows 10 IoT Enterprise LTSC** | Embedded Systems (Kiosks, ATMs) | Extended 10-year support, but bare ISOs frequently trigger severe driver conflicts and BSODs on consumer PC hardware. |
+| **Windows 10 IoT Enterprise LTSC** *(Avoid Clean ISO Install)* | Embedded Systems (Kiosks, ATMs) | Extended 10-year support, but bare ISOs frequently trigger severe driver conflicts and BSODs on consumer PC hardware. |
 
-> 💡 **Recommended Workflow:** Always install the **standard Windows 10 Enterprise LTSC ISO**. If you want the extended 10-year support lifecycle of IoT, install the standard edition first and perform an in-place conversion to IoT using MAS after installation. This avoids driver initialization errors entirely.
+---
 
 ### ISO Flashing Instructions
-1. Download **Windows 10 Enterprise LTSC 2021 (x64)** from the repository.
+1. Open the **[MassGrave LTSC Links Page](https://massgrave.dev/docs/windows_ltsc_links.md)** and download **Windows 10 Enterprise LTSC 2021 (x64)** *(Standard, Non-IoT)*.
 2. Open **Rufus** and select your USB flash drive (8GB+ recommended).
 3. Set **Partition scheme** based on your motherboard firmware:
    * `GPT` for modern UEFI systems.
@@ -64,9 +74,9 @@ Prevent PCIe-related bus timeouts and system freezes:
 
 ---
 
-## 3. License Activation & Edition Conversion
+## 3. License Activation & Safe IoT Conversion
 
-To activate LTSC or convert your standard LTSC installation to IoT LTSC without third-party executables or modified binaries, use the open-source Microsoft Activation Scripts (MAS).
+To activate LTSC or convert your standard LTSC installation to IoT LTSC safely without third-party executables or modified binaries, use the open-source Microsoft Activation Scripts (MAS).
 
 1. Right-click the **Start Button** and launch **PowerShell (Admin)**.
 2. Run the following command:
