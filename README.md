@@ -32,22 +32,28 @@ A complete step-by-step guide on how to safely download, install, and activate W
 
 ---
 
+
 ### ⚠️ 2. Crucial Step During Setup (Avoiding Random BSODs)
 <details>
 <summary><b>▶ Click here to read before installing!</b></summary>
 
 <br>
 
-During the Windows installation process, you will be presented with two main options:
+When booting from your USB, the installer will ask you to choose between two editions:
 
-1. **Windows 10 Enterprise LTSC** *(Recommended)*
-2. **Windows 10 IoT Enterprise LTSC**
+1. **Windows 10 Enterprise LTSC** *(Choose This!)*
+2. **Windows 10 IoT Enterprise LTSC** *(Do Not Choose Here!)*
 
-> 🚨 **Real-World Warning:** Do **not** pick option 2 (IoT LTSC). While it may boot up fine initially, it frequently causes random **Blue Screen (BSOD)** crashes after 1 hour, 1 day, or even a week due to system driver incompatibilities on desktop PCs.
+> [!CAUTION]
+> **DO NOT SELECT IOT ENTERPRISE DIRECTLY FROM THE BOOT MEDIA!**
+> 
+> Selecting the IoT option during the setup screen applies strict embedded system policies to standard PC hardware. While it boots fine initially, it frequently leads to random **Blue Screen of Death (BSOD)** crashes or missing driver errors after a few days or a week.
 
-#### 💡 Solution:
-* Always choose **Option 1: Windows 10 Enterprise LTSC** during setup.
-* Proceed with a clean installation, then activate using the official GitHub script below.
+#### 💡 The Correct Strategy:
+1. Always pick **Option 1: Windows 10 Enterprise LTSC** on the boot screen. This ensures standard desktop drivers load safely.
+2. Complete the installation.
+3. Once in Windows, run the MAS PowerShell activation script (Step 3). 
+4. **The MAS script will automatically convert your license to IoT Enterprise LTSC in the background!** You get extended support until 2032 without any of the installer driver bugs.
 
 </details>
 
